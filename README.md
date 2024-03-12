@@ -29,4 +29,4 @@ We welcome any feedback or suggestions for improving NGL-Spammer. For support or
 
 *Note: This README.md is subject to change as the project evolves. Stay tuned for updates!*
 
-**Additional Note**: Our features also include an anti-block feature to ensure message delivery and a Discord webhook notifier for real-time updates and notifications.
+**Additional Note**: Our features also include an anti-block feature to ensure message delivery and a Discord webhook notifier for real-time notifications.
