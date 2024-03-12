@@ -10,7 +10,7 @@ NGL-Spammer is a powerful tool designed for sending bulk messages efficiently. W
 
 ### Additional Features
 
-1. **Constant Bomb**: Initiate a barrage of messages with a single click, perfect for urgent communications or time-sensitive announcements.
+1. **Constant Bomb**: Initiate a barrage of messages with a single click, perfect for huge spams and advertisements
 2. **Custom Messages**: Customizing your messages instead of using our own message.
 3. **Check NGL.Link Page**: Easily access and monitor NGL.Link pages for tracking purposes.
 
