@@ -2,6 +2,9 @@
 
 starhook is a minimal NGL Spammer that runs on NodeJS, the python build will be released by Birthday as a **seperate branch** (read this if ur birthday)
 
+# KEEP IN MIND, THE JS BUILD WILL NEVER BE OPEN SOURCE, IF YOU SOMEHOW DOWNLOADED THE SOURCE THEN IT IS A MALICIOUS BUILD
+# Python build will be fully open and editable, the message template additionals are available when Birthday pushes the branch out.
+
 ## Features
 
 - **Block Bypass**: spammer can still send messages even if you've been blocked.
