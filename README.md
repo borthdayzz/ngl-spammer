@@ -1,6 +1,6 @@
 # NGL-Spammer
 
-starhook is a minimal NGL Spammer that runs on NodeJS, the python build will be released by Birthday as a **seperate branch** (read this if ur birthday)
+starhook is a minimal NGL Spammer that runs on NodeJS, the python build will be released by Birthday as a **seperate branch**
 
 # KEEP IN MIND, THE JS BUILD WILL NEVER BE OPEN SOURCE, IF YOU SOMEHOW DOWNLOADED THE SOURCE THEN IT IS A MALICIOUS BUILD
 # Python build will be fully open and editable, the message template additionals are available when Birthday pushes the branch out.
@@ -28,7 +28,11 @@ starhook is a minimal NGL Spammer that runs on NodeJS, the python build will be 
 - ////////////////////////////////////////////////////////////////////////////////////////
 
 - However if you have issues with that, i'd recommend installing the packages manually
-"npm install request readline"
++ "npm install request"
++ "npm install fs"
++ "npm install readline"
++ "npm install axios"
++ "npm install node-machine-id"
 
 ## Feedback and Support
 
