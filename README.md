@@ -17,12 +17,12 @@ starhook is a minimal NGL Spammer that runs on NodeJS, the python build will be 
 ## Installation
 
 - **Installation is automatic, all you need is NodeJS and you should be good to go.**
-/// HOW TO RUN ///
+- /// HOW TO RUN ///
 - Extract it to a folder, click on the address bar and type "cmd"
 - Once you have terminal open then type "node main.js"
 - **Packages will be installed automatically, no need for manual installation**
 
-////////////////////////////////////////////////////////////////////////////////////////
+- ////////////////////////////////////////////////////////////////////////////////////////
 
 - However if you have issues with that, i'd recommend installing the packages manually
 "npm install request readline"
@@ -38,6 +38,6 @@ We'd love to hear what you think! Join our Discord [here](https://discord.gg/Kpm
 ## Contributors
 
 - [BirthX](https://github.com/BirthScripts)
-- [enkei](https://e-z.bio/lmfao)
+- [enkei](https://e-z.bio/lmfao) / [github](https://github.com/veteneso)
 
 *Note: This README.md may change as we update the project.*
