@@ -36,14 +36,7 @@ starhook is a minimal NGL Spammer that runs on NodeJS, the python build is now r
 
 ## Feedback and Support
 
-We'd love to hear what you think! Join our Discord [here](https://discord.gg/Rcus6RBDus).
-
-## Updates and Fixes
-**PYTHON VERSION**
-- Removed Anti-Block
-
-**JS VERSION**
-- None
+We'd love to hear what you think! Join our Discord [here](https://discord.gg/ADcQguvquv).
 
 ## Proof of our Anti-Block feature
 
