@@ -1,50 +1,54 @@
-_A=False
-import random,requests,time,threading,signal,sys
-DISCORD_WEBHOOK_URL='put discord webhook here'
-running=True
-def read_lines_from_file(filename):
+N=range
+H=False
+C=input
+A=print
+import ctypes as K,random as F,requests as D,time as E,threading as L,signal as I,sys
+K.windll.kernel32.SetConsoleTitleW('starhook.solutions')
+O='put webhook here'
+B=True
+def G(filename):
 	with open(filename,'r')as A:return[A.strip()for A in A.readlines()]
-userAgentOptions=read_lines_from_file('user_agents.txt')
-messages=read_lines_from_file('messages.txt')
-uuids=read_lines_from_file('list_uuids.txt')
-if len(uuids)==0:print('❌ Error: No UUIDs found in list_uuids.txt file.');exit(1)
-def generate_user_agent():return random.choice(userAgentOptions)
-def send_message(username,user_question,count):
-	C=count;B=user_question;A=username;global running;D=random.choice(uuids).strip();E=generate_user_agent();F={'X-Requested-With':'XMLHttpRequest','Content-Type':'application/x-www-form-urlencoded; charset=UTF-8','User-Agent':E};G={'username':A,'question':B,'deviceId':D,'gameSlug':'','referrer':''}
-	while running:
+P=G('user_agents.txt')
+Q=G('messages.txt')
+J=G('list_uuids.txt')
+if len(J)==0:A('❌ Error: No UUIDs found in list_uuids.txt file.');exit(1)
+def R():return F.choice(P)
+def M(username,user_question,count):
+	H=count;G=user_question;C=username;global B;I=F.choice(J).strip();K=R();L={'X-Requested-With':'XMLHttpRequest','Content-Type':'application/x-www-form-urlencoded; charset=UTF-8','User-Agent':K};M={'username':C,'question':G,'deviceId':I,'gameSlug':'','referrer':''}
+	while B:
 		try:
-			H=requests.post('https://ngl.link/api/submit',headers=F,data=G,timeout=10)
-			if H.status_code==200:
-				print(f"Message sent successfully to {A} ({C}) with device ID: {D}")
-				if C==1:notify_discord(A,B)
+			N=D.post('https://ngl.link/api/submit',headers=L,data=M,timeout=10)
+			if N.status_code==200:
+				A(f"Message sent successfully to {C} ({H}) with device ID: {I}")
+				if H==1:S(C,G)
 				break
-			else:print(f"Failed to send message to {A}");time.sleep(10)
-		except Exception as I:print(f"Failed to send message to {A}: {str(I)}");time.sleep(10)
-def notify_discord(username,message):A={'content':f"Spamming message to {username}: {message}"};requests.post(DISCORD_WEBHOOK_URL,json=A)
-def check_ngl_link(url):
+			else:A(f"Failed to send message to {C}");E.sleep(10)
+		except Exception as O:A(f"Failed to send message to {C}: {str(O)}");E.sleep(10)
+def S(username,message):A={'content':f"Spamming message to {username}: {message}"};D.post(O,json=A)
+def T(url):
 	try:
-		A=requests.head(url,timeout=10)
-		if A.status_code==200:print('The ngl.link page exists.')
-		elif A.status_code==404:print('The ngl.link page was deleted.')
-		else:print('The ngl.link page returned an error.')
-	except requests.RequestException as B:print('An error occurred while checking the ngl.link page:',B)
-def shutdown_signal_handler(signal,frame):global running;print('Received shutdown signal. Shutting down gracefully...');running=_A
-signal.signal(signal.SIGINT,shutdown_signal_handler)
-def main():
-	G='Input how many you want to send: ';F='Input username: ';global running
-	while running:
-		print('starhook ngl spammer');print('Choose an option:');print('1 - Constant bomb');print('2 - Custom message');print('3 - Check ngl.link page')
-		try:A=input('Enter the option number: ')
-		except EOFError:print('\nReceived shutdown signal. Shutting down gracefully...');running=_A;break
-		if A=='1':
-			B=input(F);C=int(input(G))
-			for D in range(C):E=random.choice(messages);threading.Thread(target=send_message,args=(B,E,D+1)).start();time.sleep(2.5)
-		elif A=='2':
-			B=input(F);E=input('Input message: ');C=int(input(G))
-			for D in range(C):threading.Thread(target=send_message,args=(B,E,D+1)).start();time.sleep(2.5)
-		elif A=='3':
-			while running:H=input('Enter the path component of the ngl.link (e.g., /barfing): ');I=f"https://ngl.link/{H}";check_ngl_link(I);break
-		J=input('Do you want to continue? (yes or no): ')
-		if J.lower()!='yes':running=_A
-	print('Exiting program...')
-main()
+		B=D.head(url,timeout=10)
+		if B.status_code==200:A('The ngl.link page exists.')
+		elif B.status_code==404:A('The ngl.link page was deleted.')
+		else:A('The ngl.link page returned an error.')
+	except D.RequestException as C:A('An error occurred while checking the ngl.link page:',C)
+def U(signal,frame):global B;A('Received shutdown signal. Shutting down gracefully...');B=H
+I.signal(I.SIGINT,U)
+def V():
+	P='Input how many you want to send: ';O='Input username: ';global B
+	while B:
+		A('starhook ngl spammer');A('Choose an option:');A('1 - Constant bomb');A('2 - Custom message');A('3 - Check ngl.link page')
+		try:D=C('Enter the option number: ')
+		except EOFError:A('\nReceived shutdown signal. Shutting down gracefully...');B=H;break
+		if D=='1':
+			G=C(O);I=int(C(P))
+			for J in N(I):K=F.choice(Q);L.Thread(target=M,args=(G,K,J+1)).start();E.sleep(2.5)
+		elif D=='2':
+			G=C(O);K=C('Input message: ');I=int(C(P))
+			for J in N(I):L.Thread(target=M,args=(G,K,J+1)).start();E.sleep(2.5)
+		elif D=='3':
+			while B:R=C('Enter the path component of the ngl.link (e.g., /barfing): ');S=f"https://ngl.link/{R}";T(S);break
+		U=C('Do you want to continue? (yes or no): ')
+		if U.lower()!='yes':B=H
+	A('Exiting program...')
+V()
