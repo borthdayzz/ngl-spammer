@@ -2,16 +2,15 @@ N=range
 H=False
 C=input
 A=print
-import ctypes as K,random as F,requests as D,time as E,threading as L,signal as I,sys
+import ctypes as K,random as F,requests as D,time as E,threading as L,signal as I,sys,config as O
 K.windll.kernel32.SetConsoleTitleW('starhook.solutions')
-O='put webhook here'
 B=True
 def G(filename):
 	with open(filename,'r')as A:return[A.strip()for A in A.readlines()]
 P=G('user_agents.txt')
 Q=G('messages.txt')
-J=G('list_uuids.txt')
-if len(J)==0:A('❌ Error: No UUIDs found in list_uuids.txt file.');exit(1)
+J=G('uuids.txt')
+if len(J)==0:A('❌ Error: No UUIDs found in uuids.txt file.');exit(1)
 def R():return F.choice(P)
 def M(username,user_question,count):
 	H=count;G=user_question;C=username;global B;I=F.choice(J).strip();K=R();L={'X-Requested-With':'XMLHttpRequest','Content-Type':'application/x-www-form-urlencoded; charset=UTF-8','User-Agent':K};M={'username':C,'question':G,'deviceId':I,'gameSlug':'','referrer':''}
@@ -24,7 +23,7 @@ def M(username,user_question,count):
 				break
 			else:A(f"Failed to send message to {C}");E.sleep(10)
 		except Exception as O:A(f"Failed to send message to {C}: {str(O)}");E.sleep(10)
-def S(username,message):A={'content':f"Spamming message to {username}: {message}"};D.post(O,json=A)
+def S(username,message):A={'content':f"Spamming message to {username}: {message}"};D.post(O.DISCORD_WEBHOOK_URL,json=A)
 def T(url):
 	try:
 		B=D.head(url,timeout=10)
@@ -51,4 +50,4 @@ def V():
 		U=C('Do you want to continue? (yes or no): ')
 		if U.lower()!='yes':B=H
 	A('Exiting program...')
-V()
+if __name__=='__main__':V()
