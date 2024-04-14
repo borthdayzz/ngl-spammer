@@ -46,5 +46,6 @@ We'd love to hear what you think! Join our Discord [here](https://discord.gg/ADc
 
 - [BirthX](https://github.com/BirthScripts)
 - [enkei](https://e-z.bio/lmfao) / [github](https://github.com/veteneso)
+- [uexedus](https://github.com/uexeduck)
 
 *Note: This README.md may change as we update the project.*
