@@ -1,6 +1,6 @@
 # NGL-Spammer
 
-starhook is a minimal NGL Spammer that runs on NodeJS, the python build is now released
+starhook is a minimal NGL Spammer that runs on NodeJS, python build is no longer maintained. Use C Version instead
 
 # KEEP IN MIND, THE JS BUILD WILL NEVER BE OPEN SOURCE, IF YOU SOMEHOW DOWNLOADED THE SOURCE THEN IT IS A MALICIOUS BUILD
 # Python build will be fully open and editable, the message template additionals are available.
