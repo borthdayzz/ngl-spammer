@@ -1,3 +1,5 @@
+# THIS IS NOW DISCONTINUED! WE ARE NO LONGER GOING TO WORK WITH OUR NGL SPAMMER, THANK YOU
+
 # NGL-Spammer
 
 starhook is a minimal NGL Spammer that runs on NodeJS, python build is no longer maintained. Use C Version instead
