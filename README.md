@@ -1,4 +1,4 @@
-# THIS IS NOW DISCONTINUED! WE ARE NO LONGER GOING TO WORK WITH OUR NGL SPAMMER, THANK YOU
+# starhook.solutions (boggle.cc)
 
 # NGL-Spammer
 
