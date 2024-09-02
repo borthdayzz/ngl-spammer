@@ -22,6 +22,9 @@ starhook.solutions (boggle.cc) is a minimal NGL Spammer that runs on NodeJS, Pyt
 ## Why we made this?
 We created this to encourage NGL developers to patch it.
 
+## Where to download?
+Download different versions [here](https://github.com/borthdayzz/ngl-spammer/releases)
+
 ## Feedback and Support
 
 We'd love to hear what you think! Join our Discord [here](https://discord.gg/Fc23Qprk2B).
