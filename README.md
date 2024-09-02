@@ -24,7 +24,7 @@ We created this to encourage NGL developers to patch it.
 
 ## Feedback and Support
 
-We'd love to hear what you think! Join our Discord [here](https://discord.gg/ADcQguvquv).
+We'd love to hear what you think! Join our Discord [here](https://discord.gg/Fc23Qprk2B).
 
 ## Proof of our Anti-Block feature
 
