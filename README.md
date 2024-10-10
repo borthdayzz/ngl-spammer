@@ -5,7 +5,7 @@
 starhook.solutions (boggle.cc) is a minimal NGL Spammer that runs on NodeJS, Python and C Version.
 
 # KEEP IN MIND, THE JS BUILD WILL NEVER BE OPEN SOURCE, IF YOU SOMEHOW DOWNLOADED THE SOURCE THEN IT IS A MALICIOUS BUILD
-# Python build will be fully open and editable, the message template additionals are available.
+# Python build is currently deleted, it will be back soon.
 
 ## Features
 
@@ -27,7 +27,7 @@ Download different versions [here](https://github.com/borthdayzz/ngl-spammer/rel
 
 ## Feedback and Support
 
-We'd love to hear what you think! Join our Discord [here](https://discord.gg/Fc23Qprk2B).
+Email us at bogglecc@waifu.club or join our [Discord](https://discord.gg/Fc23Qprk2B)
 
 ## Proof of our Anti-Block feature
 
@@ -35,7 +35,7 @@ We'd love to hear what you think! Join our Discord [here](https://discord.gg/Fc2
 
 ## Contributors
 
-- [BirthX](https://github.com/BirthScripts)
+- [BirthX](https://github.com/borthdayzz)
 - [enkei](https://e-z.bio/lmfao) / [github](https://github.com/veteneso)
 - [uexedus](https://github.com/uexeduck)
 
