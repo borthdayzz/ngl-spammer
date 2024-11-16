@@ -1,4 +1,4 @@
-# starhook.solutions (boggle.cc)
+# boggle.cc (formerly known as starhook.solutions)
 
 # NGL-Spammer
 
