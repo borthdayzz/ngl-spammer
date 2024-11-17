@@ -2,7 +2,7 @@
 
 # NGL-Spammer
 
-starhook.solutions (boggle.cc) is a minimal NGL Spammer that runs on NodeJS, Python and C Version.
+boggle.cc (starhook.solutions) is a minimal NGL Spammer that runs on NodeJS, Python and C Version.
 
 # KEEP IN MIND, THE JS BUILD WILL NEVER BE OPEN SOURCE, IF YOU SOMEHOW DOWNLOADED THE SOURCE THEN IT IS A MALICIOUS BUILD
 # Python build is currently deleted, it will be back soon.
