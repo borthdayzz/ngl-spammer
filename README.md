@@ -7,8 +7,6 @@ We do not take any responsibility for any actions you take with this tool. By us
 
 boggle.cc (starhook.solutions) is a minimal NGL Spammer that runs on NodeJS, Python and C Version.
 
-# KEEP IN MIND, THE JS BUILD WILL NEVER BE OPEN SOURCE, IF YOU SOMEHOW DOWNLOADED THE SOURCE THEN IT IS A MALICIOUS BUILD
-
 ## Features
 
 - **Block Bypass**: Our spammer can still send messages even if your UUID and UserAgent has been blocked.
@@ -20,12 +18,12 @@ boggle.cc (starhook.solutions) is a minimal NGL Spammer that runs on NodeJS, Pyt
 
 1. **Constant Bomb**: Send a bunch of messages with just one click.
 2. **Custom Messages**: Write your own messages instead of using premade ones.
+3. 
+## Where to download?
+Download different versions [here](https://github.com/borthdayzz/ngl-spammer/releases)
 
 ## Why we made this?
 We created this to encourage NGL developers to patch it.
-
-## Where to download?
-Download different versions [here](https://github.com/borthdayzz/ngl-spammer/releases)
 
 ## Feedback and Support
 
