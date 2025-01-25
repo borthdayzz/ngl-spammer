@@ -28,9 +28,10 @@ Download different versions [here](https://github.com/borthdayzz/ngl-spammer/rel
 
 Email us at bogglecc@waifu.club or join our [Discord](https://discord.gg/Fc23Qprk2B)
 
-## Proof of our Anti-Block feature
+> [!WARNING]
+Disclaimer:
 
-[Watch the video demonstration here](https://github.com/BirthScripts/ngl-spammer/assets/87570691/36b73aea-c09e-4340-ab6e-876923592913)
+We do not take any responsibility for any actions you take with this tool. By using this software, you acknowledge that we are not liable for any damages, loss of data, or any negative consequences that may result from its use. Use this tool at your own risk.
 
 ## Contributors
 
