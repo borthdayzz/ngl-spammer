@@ -29,9 +29,7 @@ Download different versions [here](https://github.com/borthdayzz/ngl-spammer/rel
 Email us at bogglecc@waifu.club or join our [Discord](https://discord.gg/Fc23Qprk2B)
 
 > [!WARNING]
-Disclaimer:
-
-We do not take any responsibility for any actions you take with this tool. By using this software, you acknowledge that we are not liable for any damages, loss of data, or any negative consequences that may result from its use. Use this tool at your own risk.
+Disclaimer: We do not take any responsibility for any actions you take with this tool. By using this software, you acknowledge that we are not liable for any damages, loss of data, or any negative consequences that may result from its use. Use this tool at your own risk.
 
 ## Contributors
 
