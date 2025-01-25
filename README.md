@@ -14,11 +14,6 @@ boggle.cc (starhook.solutions) is a minimal NGL Spammer that runs on NodeJS, Pyt
 - **Customizable Templates**: You can make your own message templates.
 - **Personalization**: Make your messages feel more personal by adding things like names.
 
-### Additional Features
-
-1. **Constant Bomb**: Send a bunch of messages with just one click.
-2. **Custom Messages**: Write your own messages instead of using premade ones.
-3. 
 ## Where to download?
 Download different versions [here](https://github.com/borthdayzz/ngl-spammer/releases)
 
