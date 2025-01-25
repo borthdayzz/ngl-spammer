@@ -13,6 +13,7 @@ boggle.cc (starhook.solutions) is a minimal NGL Spammer that runs on NodeJS, Pyt
 - **Word Bypass**: Our spammer can bypass your messages even though your messages have been blocked or blacklisted.
 - **Customizable Templates**: You can make your own message templates.
 - **Personalization**: Make your messages feel more personal by adding things like names.
+- **Proxies Support**: Make your messages even more faster with proxies!
 
 ## Where to download?
 Download different versions [here](https://github.com/borthdayzz/ngl-spammer/releases)
