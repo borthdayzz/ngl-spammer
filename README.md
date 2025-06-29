@@ -23,12 +23,12 @@ We created this to encourage NGL developers to patch it.
 
 ## Feedback and Support
 
-Email us at bogglecc@waifu.club or join our [Discord](https://discord.gg/Fc23Qprk2B)
+Email us at bogglecc@mailhaven.su or join our [Discord](https://discord.gg/Fc23Qprk2B)
 
 ## Contributors
 
 - [BirthX](https://github.com/borthdayzz)
-- [enkei](https://e-z.bio/lmfao) / [github](https://github.com/veteneso)
+- [enkei](https://e-z.bio/lmfao) / [github](https://github.com/llygad)
 - [uexedus](https://github.com/uexeduck)
 
 *Note: This README.md may change as we update the project.*
