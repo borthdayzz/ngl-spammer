@@ -27,7 +27,7 @@ Email us at bogglecc@mailhaven.su or join our [Discord](https://discord.gg/Fc23Q
 
 ## Contributors
 
-- [BirthX](https://github.com/borthdayzz)
+- [borthdayzz](https://github.com/borthdayzz)
 - [enkei](https://e-z.bio/lmfao) / [github](https://github.com/llygad)
 - [uexedus](https://github.com/uexeduck)
 
