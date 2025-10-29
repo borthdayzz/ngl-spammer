@@ -30,7 +30,7 @@ TERM_STYLES = {
     "reset": "\033[0m"
 }
 
-VERSION = "2.0.0"
+VERSION = "2.1.0"
 GITHUB_RAW_URL = "https://raw.githubusercontent.com/borthdayzz/ngl-spammer/refs/heads/main/python/main.py"
 
 
