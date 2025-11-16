@@ -30,7 +30,7 @@ TERM_STYLES = {
     "reset": "\033[0m"
 }
 
-VERSION = "2.1.0"
+VERSION = "2.2.0"
 GITHUB_RAW_URL = "https://raw.githubusercontent.com/borthdayzz/ngl-spammer/refs/heads/main/python/main.py"
 
 
@@ -89,10 +89,15 @@ def build_headers(username: str) -> Dict[str, str]:
     }
 
 
-def proxy_worker(proxy: str, username: str, messages: List[str], counter: List[int], stop_event: threading.Event) -> None:
+def proxy_worker(proxy: str, username: str, messages: List[str], counter: List[int], stop_event: threading.Event, delay: float = 0, total: int = 0) -> None:
     session = requests.Session()
     px = {"http": f"http://{proxy}", "https": f"http://{proxy}"}
     while not stop_event.is_set():
+        with COUNTER_LOCK:
+            if total > 0 and counter[0] >= total:
+                stop_event.set()
+                break
+
         headers = build_headers(username)
         data = {
             "username": username,
@@ -113,6 +118,11 @@ def proxy_worker(proxy: str, username: str, messages: List[str], counter: List[i
             with COUNTER_LOCK:
                 counter[0] += 1
                 print_status("success", f"Messages Sent: {counter[0]}")
+                if total > 0 and counter[0] >= total:
+                    stop_event.set()
+                    break
+                if delay > 0:
+                    time.sleep(delay)
         except requests.exceptions.Timeout:
             print_status("warning", f"Timeout | {proxy}")
             break
@@ -127,7 +137,7 @@ def proxy_worker(proxy: str, username: str, messages: List[str], counter: List[i
             break
 
 
-def send_messages(username: str, messages: List[str], proxies: List[str]) -> None:
+def send_messages(username: str, messages: List[str], proxies: List[str], delay: float = 0, total: int = 0) -> None:
     counter = [0]
     stop_event = threading.Event()
     threads: List[threading.Thread] = []
@@ -136,7 +146,7 @@ def send_messages(username: str, messages: List[str], proxies: List[str]) -> Non
             continue
         t = threading.Thread(
             target=proxy_worker,
-            args=(proxy, username, messages, counter, stop_event),
+            args=(proxy, username, messages, counter, stop_event, delay, total),
             daemon=True,
         )
         threads.append(t)
@@ -199,6 +209,30 @@ def update_script() -> None:
         print_status("error", f"Update failed: {str(e)}")
 
 
+def get_spam_settings() -> tuple:
+    while True:
+        try:
+            count_input = input("\033[38;5;87m⟫ How many messages to send?: \033[0m").strip()
+            if not count_input.isdigit() or int(count_input) <= 0:
+                print_status("warning", "Please enter a valid positive number")
+                continue
+            
+            speed_input = input("\033[38;5;87m⟫ Delay between messages (0 for fast, in seconds): \033[0m").strip()
+            try:
+                delay = float(speed_input)
+                if delay < 0:
+                    print_status("warning", "Delay cannot be negative")
+                    continue
+            except ValueError:
+                print_status("warning", "Please enter a valid number for delay")
+                continue
+            
+            return int(count_input), delay
+        except KeyboardInterrupt:
+            print_status("critical", "\nOperation cancelled")
+            raise
+
+
 def main() -> None:
     clear_console()
     print_banner()
@@ -222,8 +256,9 @@ def main() -> None:
         
     try:
         username = get_username()
-        print_status("success", f"Starting attack on: {username}")
-        send_messages(username, MESSAGES, PROXIES)
+        count, delay = get_spam_settings()
+        print_status("success", f"Starting: {count} messages to {username} with {delay}s delay")
+        send_messages(username, MESSAGES, PROXIES, delay, count)
     except KeyboardInterrupt:
         print_status("critical", "\nShutting down...")
         return
